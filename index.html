@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Emoji解析</title>
+    <link rel="stylesheet" type="text/css" href="emoji.css">
+    <link rel="stylesheet" type="text/css" href="emojiyj/emojiyj.css">
+</head>
+<body>
+<div>
+   <button id="btnGo">解析</button>
+   <p class="emoji-content1">对照：哈哈亲们，前几天团购的牛排到服务站了，快来领回家了！[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon]aq_jiyan嚯嚯哈哈哈[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]ap_haixiu[/soon][soon]ah_guzhang[/soon]</p>
+   <p class="emoji-content">目标：哈哈亲们，前几天团购的牛排到服务站了，快来领回家了！[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon]aq_jiyan嚯嚯哈哈哈[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]ap_haixiu[/soon][soon]ah_guzhang[/soon]</p>
+   <hr/>
+   <p class="emoji-content1">对照：d_baibai [e]smile[/e][e]thumbsdown[/e]你好，[e]sunglasses[/e][e]grinning[/e]</p>
+   <p class="emoji-content">目标：d_baibai [e]smile[/e][e]thumbsdown[/e]你好，[e]sunglasses[/e][e]grinning[/e]</p>
+   <hr/>
+   <p class="emoji-content1">对照：d_baibai :smile::thumbsdown:你好，:sunglasses::grinning:</p>
+   <p class="emoji-content">目标：d_baibai :smile::thumbsdown:你好，:sunglasses::grinning:</p>
+   <hr/>
+    <p class="emoji-content1">对照：
+	哈哈亲们，前几天团购的牛排到服务站了，快来领回家了！[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon]aq_jiyan嚯嚯哈哈哈[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]ap_haixiu[/soon][soon]ah_guzhang[/soon]<br>
+	哈哈d_baibai [e]smile[/e][e]thumbsdown[/e]你好，[e]sunglasses[/e][e]grinning[/e]<br>
+	哈哈d_baibai :smile::thumbsdown:你好，:sunglasses::grinning:，:sunglassess::grinningg:<br>
+	</p>
+   <p class="emoji-content">目标：
+	哈哈亲们，前几天团购的牛排到服务站了，快来领回家了！[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]aq_jiyan[/soon]aq_jiyan嚯嚯哈哈哈[soon]aq_jiyan[/soon][soon]aq_jiyan[/soon][soon]ap_haixiu[/soon][soon]ah_guzhang[/soon]<br>
+	哈哈d_baibai [e]smile[/e][e]thumbsdown[/e]你好，[e]sunglasses[/e][e]grinning[/e]<br>
+	哈哈d_baibai :smile::thumbsdown:你好，:sunglasses::grinning:，:sunglassess::grinningg:<br>
+	</p>
+   <hr/>
+</div>
+</body>
+<script  src="jquery.js"></script>
+<script  src="emoji.utils.min.js"></script>
+</html>
+<script>
+	$(function(){
+			$("#btnGo").on("click", function(){
+				EmojiUtils.parse(".emoji-content");
+			});
+	});
+</script>

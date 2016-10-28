@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EmojiYJ</title>
+
+    <link rel="stylesheet" type="text/css" href="emojiyj.css">
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <style type="text/css">  
+        html {
+            color: #444;
+            font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }  
+        #content {
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 38px;
+            text-transform: uppercase;
+            font-weight: normal
+        }
+        a {
+            color: inherit;
+            font-weight: bold
+        }
+        a:hover {
+            color: #999
+        }
+        ul {
+            display: table;
+            padding: 0 0 1em 1.5em;
+            font-family: monospace
+        }
+        li {
+            list-style: none;
+            float: left;
+            width: 330px;
+            margin-bottom: .5em
+        }
+        li .hover {
+            margin-left: -4px
+        }
+        li img {
+            vertical-align: middle;
+            height: 22px;
+            width: 22px
+        }
+        .code{
+          padding: 10px;
+          border-radius: 6px;
+          background-color: #F7F7F7;
+        }
+    </style>
+
+    <script type="text/javascript">    
+        var list1 = [
+			 "aa_keai"
+			,"ab_haha"
+			,"ac_xixi"
+			,"ad_xiaoku"
+			,"ae_sikao"
+			,"af_numa"
+			,"ag_xu"
+			,"ah_guzhang"
+			,"ai_zuohengheng"
+			,"aj_youhengheng"
+			,"ak_qinqin"
+			,"al_yiwen"
+			,"am_baibai"
+			,"an_hehe"
+			,"ao_yinxian"
+			,"ap_haixiu"
+			,"aq_jiyan"
+			,"ar_dalian"
+			,"as_nu"
+			,"at_lei"
+			,"ba_bishi"
+			,"bb_chanzui"
+			,"bc_chijing"
+			,"bd_dahaqi"
+			,"be_beishang"
+			,"bf_bizui"
+			,"bg_ding"
+			,"bh_ganmao"
+			,"bi_han"
+			,"bj_aini"
+			,"bk_heixian"
+			,"bl_heng"
+			,"bm_huaxin"
+			,"bn_kelian"
+			,"bo_ku"
+			,"bp_kun"
+			,"bq_landelini"
+			,"br_qian"
+			,"bs_shayan"
+			,"bt_shengbing"
+			,"ca_shiwang"
+			,"cb_shuijiao"
+			,"cc_zhuakuang"
+			,"cd_taikaixin"
+			,"ce_touxiao"
+			,"cf_tu"
+			,"cg_wabishi"
+			,"ch_weiqu"
+			,"ci_yun"
+			,"cj_shuai"
+			,"ck_doge"
+			,"cl_miao"
+			,"cm_xiongmao"
+			,"cn_tuzi"
+			,"co_zhutou"
+			,"cp_shenshou"
+			,"cq_nanhaier"
+			,"cr_nvhaier"
+			,"cs_feizao"
+			,"ct_aoteman"
+			,"da_geili"
+			,"db_jiong"
+			,"dc_meng"
+			,"dd_shenma"
+			,"de_v5"
+			,"df_xi"
+			,"dg_zhi"
+			,"dh_buyao"
+			,"di_good"
+			,"dj_haha"
+			,"dk_lai"
+			,"dl_ok"
+			,"dm_ruo"
+			,"dn_woshou"
+			,"do_ye"
+			,"dp_zan"
+			,"dq_zuoyi"
+			,"dr_shangxin"
+			,"ds_xin"
+			,"dt_dangao"
+			,"ea_feiji"
+			,"eb_ganbei"
+			,"ec_huatong"
+			,"ed_lazhu"
+			,"ee_liwu"
+			,"ef_lvsidai"
+			,"eg_weibo"
+			,"eh_weiguan"
+			,"ei_yinyue"
+			,"ej_zhaoxiangji"
+			,"ek_zhong"
+			,"el_weifeng"
+			,"em_xianhua"
+			,"en_taiyang"
+			,"eo_yueliang"
+			,"ep_fuyun"
+			,"eq_xiayu"
+			,"er_shachenbao"
+		];//list1
+
+        $(function() {
+            //test1();
+            //test2();
+        }); //doc ready
+
+        function test1() {
+			var html = [];
+			for(var i=0; i<list1.length; i++){
+				var item = list1[i];
+				var str = 
+				'<li>' + 
+					'<div>' + 
+						'<i id="'+item+'" class="emojiyj emojiyj-'+item+'"></i>' + 
+						'<span class="name">'+item+'</span>' + 
+					'</div>' + 
+				'</li>';
+				html.push(str);
+			}
+			$("#box").empty().append(html.join('\n'));
+        }
+
+    </script>
+</head> 
+
+<body id="content">
+    <p>      
+      <strong>使用方法：</strong>
+      <div class="code">  
+        &lt;i class="emojiyj emojiyj-aa_keai"&gt;&lt;/i&gt;
+        <br>
+      </div>
+    </p>
+    <hr>
+
+    <h2>CheatSheet</h2>
+	<ul id="box">
+		<li><div><i id="aa_keai" class="emojiyj emojiyj-aa_keai"></i><span class="name">aa_keai</span></div></li>
+		<li><div><i id="ab_haha" class="emojiyj emojiyj-ab_haha"></i><span class="name">ab_haha</span></div></li>
+		<li><div><i id="ac_xixi" class="emojiyj emojiyj-ac_xixi"></i><span class="name">ac_xixi</span></div></li>
+		<li><div><i id="ad_xiaoku" class="emojiyj emojiyj-ad_xiaoku"></i><span class="name">ad_xiaoku</span></div></li>
+		<li><div><i id="ae_sikao" class="emojiyj emojiyj-ae_sikao"></i><span class="name">ae_sikao</span></div></li>
+		<li><div><i id="af_numa" class="emojiyj emojiyj-af_numa"></i><span class="name">af_numa</span></div></li>
+		<li><div><i id="ag_xu" class="emojiyj emojiyj-ag_xu"></i><span class="name">ag_xu</span></div></li>
+		<li><div><i id="ah_guzhang" class="emojiyj emojiyj-ah_guzhang"></i><span class="name">ah_guzhang</span></div></li>
+		<li><div><i id="ai_zuohengheng" class="emojiyj emojiyj-ai_zuohengheng"></i><span class="name">ai_zuohengheng</span></div></li>
+		<li><div><i id="aj_youhengheng" class="emojiyj emojiyj-aj_youhengheng"></i><span class="name">aj_youhengheng</span></div></li>
+		<li><div><i id="ak_qinqin" class="emojiyj emojiyj-ak_qinqin"></i><span class="name">ak_qinqin</span></div></li>
+		<li><div><i id="al_yiwen" class="emojiyj emojiyj-al_yiwen"></i><span class="name">al_yiwen</span></div></li>
+		<li><div><i id="am_baibai" class="emojiyj emojiyj-am_baibai"></i><span class="name">am_baibai</span></div></li>
+		<li><div><i id="an_hehe" class="emojiyj emojiyj-an_hehe"></i><span class="name">an_hehe</span></div></li>
+		<li><div><i id="ao_yinxian" class="emojiyj emojiyj-ao_yinxian"></i><span class="name">ao_yinxian</span></div></li>
+		<li><div><i id="ap_haixiu" class="emojiyj emojiyj-ap_haixiu"></i><span class="name">ap_haixiu</span></div></li>
+		<li><div><i id="aq_jiyan" class="emojiyj emojiyj-aq_jiyan"></i><span class="name">aq_jiyan</span></div></li>
+		<li><div><i id="ar_dalian" class="emojiyj emojiyj-ar_dalian"></i><span class="name">ar_dalian</span></div></li>
+		<li><div><i id="as_nu" class="emojiyj emojiyj-as_nu"></i><span class="name">as_nu</span></div></li>
+		<li><div><i id="at_lei" class="emojiyj emojiyj-at_lei"></i><span class="name">at_lei</span></div></li>
+		<li><div><i id="ba_bishi" class="emojiyj emojiyj-ba_bishi"></i><span class="name">ba_bishi</span></div></li>
+		<li><div><i id="bb_chanzui" class="emojiyj emojiyj-bb_chanzui"></i><span class="name">bb_chanzui</span></div></li>
+		<li><div><i id="bc_chijing" class="emojiyj emojiyj-bc_chijing"></i><span class="name">bc_chijing</span></div></li>
+		<li><div><i id="bd_dahaqi" class="emojiyj emojiyj-bd_dahaqi"></i><span class="name">bd_dahaqi</span></div></li>
+		<li><div><i id="be_beishang" class="emojiyj emojiyj-be_beishang"></i><span class="name">be_beishang</span></div></li>
+		<li><div><i id="bf_bizui" class="emojiyj emojiyj-bf_bizui"></i><span class="name">bf_bizui</span></div></li>
+		<li><div><i id="bg_ding" class="emojiyj emojiyj-bg_ding"></i><span class="name">bg_ding</span></div></li>
+		<li><div><i id="bh_ganmao" class="emojiyj emojiyj-bh_ganmao"></i><span class="name">bh_ganmao</span></div></li>
+		<li><div><i id="bi_han" class="emojiyj emojiyj-bi_han"></i><span class="name">bi_han</span></div></li>
+		<li><div><i id="bj_aini" class="emojiyj emojiyj-bj_aini"></i><span class="name">bj_aini</span></div></li>
+		<li><div><i id="bk_heixian" class="emojiyj emojiyj-bk_heixian"></i><span class="name">bk_heixian</span></div></li>
+		<li><div><i id="bl_heng" class="emojiyj emojiyj-bl_heng"></i><span class="name">bl_heng</span></div></li>
+		<li><div><i id="bm_huaxin" class="emojiyj emojiyj-bm_huaxin"></i><span class="name">bm_huaxin</span></div></li>
+		<li><div><i id="bn_kelian" class="emojiyj emojiyj-bn_kelian"></i><span class="name">bn_kelian</span></div></li>
+		<li><div><i id="bo_ku" class="emojiyj emojiyj-bo_ku"></i><span class="name">bo_ku</span></div></li>
+		<li><div><i id="bp_kun" class="emojiyj emojiyj-bp_kun"></i><span class="name">bp_kun</span></div></li>
+		<li><div><i id="bq_landelini" class="emojiyj emojiyj-bq_landelini"></i><span class="name">bq_landelini</span></div></li>
+		<li><div><i id="br_qian" class="emojiyj emojiyj-br_qian"></i><span class="name">br_qian</span></div></li>
+		<li><div><i id="bs_shayan" class="emojiyj emojiyj-bs_shayan"></i><span class="name">bs_shayan</span></div></li>
+		<li><div><i id="bt_shengbing" class="emojiyj emojiyj-bt_shengbing"></i><span class="name">bt_shengbing</span></div></li>
+		<li><div><i id="ca_shiwang" class="emojiyj emojiyj-ca_shiwang"></i><span class="name">ca_shiwang</span></div></li>
+		<li><div><i id="cb_shuijiao" class="emojiyj emojiyj-cb_shuijiao"></i><span class="name">cb_shuijiao</span></div></li>
+		<li><div><i id="cc_zhuakuang" class="emojiyj emojiyj-cc_zhuakuang"></i><span class="name">cc_zhuakuang</span></div></li>
+		<li><div><i id="cd_taikaixin" class="emojiyj emojiyj-cd_taikaixin"></i><span class="name">cd_taikaixin</span></div></li>
+		<li><div><i id="ce_touxiao" class="emojiyj emojiyj-ce_touxiao"></i><span class="name">ce_touxiao</span></div></li>
+		<li><div><i id="cf_tu" class="emojiyj emojiyj-cf_tu"></i><span class="name">cf_tu</span></div></li>
+		<li><div><i id="cg_wabishi" class="emojiyj emojiyj-cg_wabishi"></i><span class="name">cg_wabishi</span></div></li>
+		<li><div><i id="ch_weiqu" class="emojiyj emojiyj-ch_weiqu"></i><span class="name">ch_weiqu</span></div></li>
+		<li><div><i id="ci_yun" class="emojiyj emojiyj-ci_yun"></i><span class="name">ci_yun</span></div></li>
+		<li><div><i id="cj_shuai" class="emojiyj emojiyj-cj_shuai"></i><span class="name">cj_shuai</span></div></li>
+		<li><div><i id="ck_doge" class="emojiyj emojiyj-ck_doge"></i><span class="name">ck_doge</span></div></li>
+		<li><div><i id="cl_miao" class="emojiyj emojiyj-cl_miao"></i><span class="name">cl_miao</span></div></li>
+		<li><div><i id="cm_xiongmao" class="emojiyj emojiyj-cm_xiongmao"></i><span class="name">cm_xiongmao</span></div></li>
+		<li><div><i id="cn_tuzi" class="emojiyj emojiyj-cn_tuzi"></i><span class="name">cn_tuzi</span></div></li>
+		<li><div><i id="co_zhutou" class="emojiyj emojiyj-co_zhutou"></i><span class="name">co_zhutou</span></div></li>
+		<li><div><i id="cp_shenshou" class="emojiyj emojiyj-cp_shenshou"></i><span class="name">cp_shenshou</span></div></li>
+		<li><div><i id="cq_nanhaier" class="emojiyj emojiyj-cq_nanhaier"></i><span class="name">cq_nanhaier</span></div></li>
+		<li><div><i id="cr_nvhaier" class="emojiyj emojiyj-cr_nvhaier"></i><span class="name">cr_nvhaier</span></div></li>
+		<li><div><i id="cs_feizao" class="emojiyj emojiyj-cs_feizao"></i><span class="name">cs_feizao</span></div></li>
+		<li><div><i id="ct_aoteman" class="emojiyj emojiyj-ct_aoteman"></i><span class="name">ct_aoteman</span></div></li>
+		<li><div><i id="da_geili" class="emojiyj emojiyj-da_geili"></i><span class="name">da_geili</span></div></li>
+		<li><div><i id="db_jiong" class="emojiyj emojiyj-db_jiong"></i><span class="name">db_jiong</span></div></li>
+		<li><div><i id="dc_meng" class="emojiyj emojiyj-dc_meng"></i><span class="name">dc_meng</span></div></li>
+		<li><div><i id="dd_shenma" class="emojiyj emojiyj-dd_shenma"></i><span class="name">dd_shenma</span></div></li>
+		<li><div><i id="de_v5" class="emojiyj emojiyj-de_v5"></i><span class="name">de_v5</span></div></li>
+		<li><div><i id="df_xi" class="emojiyj emojiyj-df_xi"></i><span class="name">df_xi</span></div></li>
+		<li><div><i id="dg_zhi" class="emojiyj emojiyj-dg_zhi"></i><span class="name">dg_zhi</span></div></li>
+		<li><div><i id="dh_buyao" class="emojiyj emojiyj-dh_buyao"></i><span class="name">dh_buyao</span></div></li>
+		<li><div><i id="di_good" class="emojiyj emojiyj-di_good"></i><span class="name">di_good</span></div></li>
+		<li><div><i id="dj_haha" class="emojiyj emojiyj-dj_haha"></i><span class="name">dj_haha</span></div></li>
+		<li><div><i id="dk_lai" class="emojiyj emojiyj-dk_lai"></i><span class="name">dk_lai</span></div></li>
+		<li><div><i id="dl_ok" class="emojiyj emojiyj-dl_ok"></i><span class="name">dl_ok</span></div></li>
+		<li><div><i id="dm_ruo" class="emojiyj emojiyj-dm_ruo"></i><span class="name">dm_ruo</span></div></li>
+		<li><div><i id="dn_woshou" class="emojiyj emojiyj-dn_woshou"></i><span class="name">dn_woshou</span></div></li>
+		<li><div><i id="do_ye" class="emojiyj emojiyj-do_ye"></i><span class="name">do_ye</span></div></li>
+		<li><div><i id="dp_zan" class="emojiyj emojiyj-dp_zan"></i><span class="name">dp_zan</span></div></li>
+		<li><div><i id="dq_zuoyi" class="emojiyj emojiyj-dq_zuoyi"></i><span class="name">dq_zuoyi</span></div></li>
+		<li><div><i id="dr_shangxin" class="emojiyj emojiyj-dr_shangxin"></i><span class="name">dr_shangxin</span></div></li>
+		<li><div><i id="ds_xin" class="emojiyj emojiyj-ds_xin"></i><span class="name">ds_xin</span></div></li>
+		<li><div><i id="dt_dangao" class="emojiyj emojiyj-dt_dangao"></i><span class="name">dt_dangao</span></div></li>
+		<li><div><i id="ea_feiji" class="emojiyj emojiyj-ea_feiji"></i><span class="name">ea_feiji</span></div></li>
+		<li><div><i id="eb_ganbei" class="emojiyj emojiyj-eb_ganbei"></i><span class="name">eb_ganbei</span></div></li>
+		<li><div><i id="ec_huatong" class="emojiyj emojiyj-ec_huatong"></i><span class="name">ec_huatong</span></div></li>
+		<li><div><i id="ed_lazhu" class="emojiyj emojiyj-ed_lazhu"></i><span class="name">ed_lazhu</span></div></li>
+		<li><div><i id="ee_liwu" class="emojiyj emojiyj-ee_liwu"></i><span class="name">ee_liwu</span></div></li>
+		<li><div><i id="ef_lvsidai" class="emojiyj emojiyj-ef_lvsidai"></i><span class="name">ef_lvsidai</span></div></li>
+		<li><div><i id="eg_weibo" class="emojiyj emojiyj-eg_weibo"></i><span class="name">eg_weibo</span></div></li>
+		<li><div><i id="eh_weiguan" class="emojiyj emojiyj-eh_weiguan"></i><span class="name">eh_weiguan</span></div></li>
+		<li><div><i id="ei_yinyue" class="emojiyj emojiyj-ei_yinyue"></i><span class="name">ei_yinyue</span></div></li>
+		<li><div><i id="ej_zhaoxiangji" class="emojiyj emojiyj-ej_zhaoxiangji"></i><span class="name">ej_zhaoxiangji</span></div></li>
+		<li><div><i id="ek_zhong" class="emojiyj emojiyj-ek_zhong"></i><span class="name">ek_zhong</span></div></li>
+		<li><div><i id="el_weifeng" class="emojiyj emojiyj-el_weifeng"></i><span class="name">el_weifeng</span></div></li>
+		<li><div><i id="em_xianhua" class="emojiyj emojiyj-em_xianhua"></i><span class="name">em_xianhua</span></div></li>
+		<li><div><i id="en_taiyang" class="emojiyj emojiyj-en_taiyang"></i><span class="name">en_taiyang</span></div></li>
+		<li><div><i id="eo_yueliang" class="emojiyj emojiyj-eo_yueliang"></i><span class="name">eo_yueliang</span></div></li>
+		<li><div><i id="ep_fuyun" class="emojiyj emojiyj-ep_fuyun"></i><span class="name">ep_fuyun</span></div></li>
+		<li><div><i id="eq_xiayu" class="emojiyj emojiyj-eq_xiayu"></i><span class="name">eq_xiayu</span></div></li>
+		<li><div><i id="er_shachenbao" class="emojiyj emojiyj-er_shachenbao"></i><span class="name">er_shachenbao</span></div></li>
+	</ul>
+</body>
+
+</html>

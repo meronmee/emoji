@@ -1,0 +1,320 @@
+/*
+// HTML
+<i class="emojiyj emojiyj-aa_keai"></i>
+*/
+.emojiyj {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  margin: 0 0.1em;
+  width: 22px ;
+  height: 22px ;
+  vertical-align: top;
+  zoom: 1;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1), all and (min--moz-device-pixel-ratio: 1), all and (-o-min-device-pixel-ratio: 1), all and (min-device-pixel-ratio: 1), all and (min-resolution: 96dpi) {
+    .emojiyj {
+        background: transparent url(emojiyj.png) 0 0 no-repeat
+    }
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 144dpi) {
+    .emojiyj {
+        background: transparent url(emojiyj@2x.png) 0 0 no-repeat;
+		background-size: 220px 220px;
+    }
+}
+
+.emojiyj-aa_keai {
+  background-position: -22px 0px;
+}
+.emojiyj-ab_haha {
+  background-position: -154px 0px;
+}
+.emojiyj-ac_xixi {
+  background-position: 0px -22px;
+}
+.emojiyj-ad_xiaoku {
+  background-position: -22px -22px;
+}
+.emojiyj-ae_sikao {
+  background-position: -44px 0px;
+}
+.emojiyj-af_numa {
+  background-position: -44px -22px;
+}
+.emojiyj-ag_xu {
+  background-position: 0px -44px;
+}
+.emojiyj-ah_guzhang {
+  background-position: -22px -44px;
+}
+.emojiyj-ai_zuohengheng {
+  background-position: -44px -44px;
+}
+.emojiyj-aj_youhengheng {
+  background-position: -66px 0px;
+}
+.emojiyj-ak_qinqin {
+  background-position: -66px -22px;
+}
+.emojiyj-al_yiwen {
+  background-position: -66px -44px;
+}
+.emojiyj-am_baibai {
+  background-position: 0px -66px;
+}
+.emojiyj-an_hehe {
+  background-position: -22px -66px;
+}
+.emojiyj-ao_yinxian {
+  background-position: -44px -66px;
+}
+.emojiyj-ap_haixiu {
+  background-position: -66px -66px;
+}
+.emojiyj-aq_jiyan {
+  background-position: -88px 0px;
+}
+.emojiyj-ar_dalian {
+  background-position: -88px -22px;
+}
+.emojiyj-as_nu {
+  background-position: -88px -44px;
+}
+.emojiyj-at_lei {
+  background-position: -88px -66px;
+}
+.emojiyj-ba_bishi {
+  background-position: 0px -88px;
+}
+.emojiyj-bb_chanzui {
+  background-position: -22px -88px;
+}
+.emojiyj-bc_chijing {
+  background-position: -44px -88px;
+}
+.emojiyj-bd_dahaqi {
+  background-position: -66px -88px;
+}
+.emojiyj-be_beishang {
+  background-position: -88px -88px;
+}
+.emojiyj-bf_bizui {
+  background-position: -110px 0px;
+}
+.emojiyj-bg_ding {
+  background-position: -110px -22px;
+}
+.emojiyj-bh_ganmao {
+  background-position: -110px -44px;
+}
+.emojiyj-bi_han {
+  background-position: -110px -66px;
+}
+.emojiyj-bj_aini {
+  background-position: -110px -88px;
+}
+.emojiyj-bk_heixian {
+  background-position: 0px -110px;
+}
+.emojiyj-bl_heng {
+  background-position: -22px -110px;
+}
+.emojiyj-bm_huaxin {
+  background-position: -44px -110px;
+}
+.emojiyj-bn_kelian {
+  background-position: -66px -110px;
+}
+.emojiyj-bo_ku {
+  background-position: -88px -110px;
+}
+.emojiyj-bp_kun {
+  background-position: -110px -110px;
+}
+.emojiyj-bq_landelini {
+  background-position: -132px 0px;
+}
+.emojiyj-br_qian {
+  background-position: -132px -22px;
+}
+.emojiyj-bs_shayan {
+  background-position: -132px -44px;
+}
+.emojiyj-bt_shengbing {
+  background-position: -132px -66px;
+}
+.emojiyj-ca_shiwang {
+  background-position: -132px -88px;
+}
+.emojiyj-cb_shuijiao {
+  background-position: -132px -110px;
+}
+.emojiyj-cc_zhuakuang {
+  background-position: 0px -132px;
+}
+.emojiyj-cd_taikaixin {
+  background-position: -22px -132px;
+}
+.emojiyj-ce_touxiao {
+  background-position: -44px -132px;
+}
+.emojiyj-cf_tu {
+  background-position: -66px -132px;
+}
+.emojiyj-cg_wabishi {
+  background-position: -88px -132px;
+}
+.emojiyj-ch_weiqu {
+  background-position: -110px -132px;
+}
+.emojiyj-ci_yun {
+  background-position: -132px -132px;
+}
+.emojiyj-cj_shuai {
+  background-position: 0px 0px;
+}
+.emojiyj-ck_doge {
+  background-position: -154px -22px;
+}
+.emojiyj-cl_miao {
+  background-position: -154px -44px;
+}
+.emojiyj-cm_xiongmao {
+  background-position: -154px -66px;
+}
+.emojiyj-cn_tuzi {
+  background-position: -154px -88px;
+}
+.emojiyj-co_zhutou {
+  background-position: -154px -110px;
+}
+.emojiyj-cp_shenshou {
+  background-position: -154px -132px;
+}
+.emojiyj-cq_nanhaier {
+  background-position: 0px -154px;
+}
+.emojiyj-cr_nvhaier {
+  background-position: -22px -154px;
+}
+.emojiyj-cs_feizao {
+  background-position: -44px -154px;
+}
+.emojiyj-ct_aoteman {
+  background-position: -66px -154px;
+}
+.emojiyj-da_geili {
+  background-position: -88px -154px;
+}
+.emojiyj-db_jiong {
+  background-position: -110px -154px;
+}
+.emojiyj-dc_meng {
+  background-position: -132px -154px;
+}
+.emojiyj-dd_shenma {
+  background-position: -154px -154px;
+}
+.emojiyj-de_v5 {
+  background-position: -176px 0px;
+}
+.emojiyj-df_xi {
+  background-position: -176px -22px;
+}
+.emojiyj-dg_zhi {
+  background-position: -176px -44px;
+}
+.emojiyj-dh_buyao {
+  background-position: -176px -66px;
+}
+.emojiyj-di_good {
+  background-position: -176px -88px;
+}
+.emojiyj-dj_haha {
+  background-position: -176px -110px;
+}
+.emojiyj-dk_lai {
+  background-position: -176px -132px;
+}
+.emojiyj-dl_ok {
+  background-position: -176px -154px;
+}
+.emojiyj-dm_ruo {
+  background-position: 0px -176px;
+}
+.emojiyj-dn_woshou {
+  background-position: -22px -176px;
+}
+.emojiyj-do_ye {
+  background-position: -44px -176px;
+}
+.emojiyj-dp_zan {
+  background-position: -66px -176px;
+}
+.emojiyj-dq_zuoyi {
+  background-position: -88px -176px;
+}
+.emojiyj-dr_shangxin {
+  background-position: -110px -176px;
+}
+.emojiyj-ds_xin {
+  background-position: -132px -176px;
+}
+.emojiyj-dt_dangao {
+  background-position: -154px -176px;
+}
+.emojiyj-ea_feiji {
+  background-position: -176px -176px;
+}
+.emojiyj-eb_ganbei {
+  background-position: -198px 0px;
+}
+.emojiyj-ec_huatong {
+  background-position: -198px -22px;
+}
+.emojiyj-ed_lazhu {
+  background-position: -198px -44px;
+}
+.emojiyj-ee_liwu {
+  background-position: -198px -66px;
+}
+.emojiyj-ef_lvsidai {
+  background-position: -198px -88px;
+}
+.emojiyj-eg_weibo {
+  background-position: -198px -110px;
+}
+.emojiyj-eh_weiguan {
+  background-position: -198px -132px;
+}
+.emojiyj-ei_yinyue {
+  background-position: -198px -154px;
+}
+.emojiyj-ej_zhaoxiangji {
+  background-position: -198px -176px;
+}
+.emojiyj-ek_zhong {
+  background-position: 0px -198px;
+}
+.emojiyj-el_weifeng {
+  background-position: -22px -198px;
+}
+.emojiyj-em_xianhua {
+  background-position: -44px -198px;
+}
+.emojiyj-en_taiyang {
+  background-position: -66px -198px;
+}
+.emojiyj-eo_yueliang {
+  background-position: -88px -198px;
+}
+.emojiyj-ep_fuyun {
+  background-position: -110px -198px;
+}
+.emojiyj-eq_xiayu {
+  background-position: -132px -198px;
+}
+.emojiyj-er_shachenbao {
+  background-position: -154px -198px;
+}
